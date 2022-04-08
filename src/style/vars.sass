@@ -1,0 +1,33 @@
+$col: rgb(109, 255, 109)
+$shadowCol: #D4FFD4
+
+
+$lowSpace: 30px
+$space: 40px
+
+$blockWidth: 300px
+
+$fp: 600px
+
+
+%column
+  display: flex
+  flex-direction: column
+
+%left_right
+  display: flex
+  justify-content: space-between
+
+%errMessage
+  height: 30px
+
+  padding-left: 10px
+  display: flex
+  align-items: flex-end
+
+  color: red
+
+@media (max-width: $fp)
+  %left_right
+    flex-direction: column
+
